@@ -102,7 +102,7 @@ public class ScoreAlgoritmnTest {
     @Test
     public void testPointsWithOnlyStrike() {
        int[][] arr = {{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0}};
-       int[] expected = {30,60,90,120,150,180,210,240};
+       int[] expected = {30,60,90,120,150,180,200,210};
        int[] actual = sa.scoreAlgoritmn(arr);
        Assert.assertArrayEquals(expected, actual);
     }
