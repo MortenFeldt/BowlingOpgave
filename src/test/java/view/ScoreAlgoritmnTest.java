@@ -106,6 +106,93 @@ public class ScoreAlgoritmnTest {
        int[] actual = sa.scoreAlgoritmn(arr);
        Assert.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void testPointsWithOneSpareRandom() {
+       int[][] arr = {{6,2},{3,5},{5,5},{1,5},{5,0},{5,4},{8,1}};
+       int[] expected = {8,16,27,33,38,47,56};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
     
+    @Test
+    public void testPointsWithTwoSpareRandom() {
+       int[][] arr = {{6,2},{3,5},{5,5},{1,5},{5,0},{5,5},{5,4},{8,1}};
+       int[] expected = {8,16,27,33,38,53,62,71};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithOneSpareStart() {
+       int[][] arr = {{5,5},{3,5},{6,2},{1,5},{5,0},{3,0},{5,4},{8,1}};
+       int[] expected = {13,21,29,35,40,43,52,61};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithTwoSpareStart() {
+       int[][] arr = {{5,5},{5,5},{1,5},{5,0},{1,0},{5,4},{8,1}};
+       int[] expected = {15,26,32,37,38,47,56};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithThreeSpareStart() {
+       int[][] arr = {{5,5},{5,5},{5,5},{1,5},{5,0},{1,4},{5,4},{8,1}};
+       int[] expected = {15,30,41,47,52,57,66,75};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithFourSpareStart() {
+       int[][] arr = {{5,5},{5,5},{5,5},{5,5},{5,0},{1,3},{5,4},{8,1}};
+       int[] expected = {15,30,45,60,65,69,78,87};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithOneSpareEnd() {
+       int[][] arr = {{6,2},{3,5},{6,2},{1,5},{5,0},{1,0},{5,4},{5,5}};
+       int[] expected = {8,16,24,30,35,36,45,55};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithTwoSpareEnd() {
+       int[][] arr = {{7,0},{3,4},{1,5},{5,0},{8,1},{5,5},{5,5}};
+       int[] expected = {7,14,20,25,34,49,59};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithThreeSpareEnd() {
+       int[][] arr = {{2,3},{5,2},{5,0},{1,5},{5,0},{5,5},{5,5},{5,5}};
+       int[] expected = {5,12,17,23,28,43,58,68};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithFourSpareEnd() {
+       int[][] arr = {{7,1},{2,4},{5,3},{5,0},{5,5},{5,5},{5,5},{5,5}};
+       int[] expected = {8,14,22,27,42,57,72,82};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
+    
+    @Test
+    public void testPointsWithOnlySpare() {
+       int[][] arr = {{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5}};
+       int[] expected = {15,30,45,60,75,90,105,115};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }   
 
 }
