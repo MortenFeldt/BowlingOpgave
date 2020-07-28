@@ -218,5 +218,13 @@ public class ScoreAlgoritmnTest {
        int[] actual = sa.scoreAlgoritmn(arr);
        Assert.assertArrayEquals(expected, actual);
     }
+    
+    @Test
+    public void testPointsWithRandomSpareStrike4() {
+       int[][] arr = {{2,2},{4,4},{8,0},{10,0},{1,1},{7,2},{4,5},{8,1}};
+       int[] expected = {4,12,20,32,34,43,52,61};
+       int[] actual = sa.scoreAlgoritmn(arr);
+       Assert.assertArrayEquals(expected, actual);
+    }
 
 }

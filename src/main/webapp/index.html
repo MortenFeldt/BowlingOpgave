@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Bowling Opgave</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Bowling Score Program</h1>
+        <h2>Morten Feldt</h2>
+        <h3>Fremgangsmåde:</h3>
+        <h4>1. Tryk på <b>HENT</b> ved enten SCORES eller TOKEN.</h4>
+        <h4>2. Tryk på <b>BEREGN</b> ved TOTAL.</h4>
+        <h4>3. Tryk på <b>CHECK</b> ved RESULT.</h4>
+
+        <table style="width:50%; border:1px solid black;">
+            <tr>
+                <td style="font-weight: bold; width:100px; height:40px; border:1px solid black;">TOKEN</td>
+                <td id="test_token" style="width:400px; height:40px; border:1px solid black;">Token fra JSON GET til SKAT</td> 
+                <td style="width:150px; height:40px; border:1px solid black;"><button id="btn_token" style="width:100%">HENT</button></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; width:100px; height:40px; border:1px solid black;">SCORES</td>
+                <td id="test_scores" style="width:400px; height:40px; border:1px solid black;">Points fra JSON GET til SKAT</td> 
+                <td style="width:150px; height:40px; border:1px solid black;"><button id="btn_scores" style="width:100%">HENT</button></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; width:100px; height:40px; border:1px solid black;">TOTAL</td>
+                <td id="test_total" style="width:400px; height:40px; border:1px solid black;">Total beregnet fra JSON GET til eget REST</td> 
+                <td style="width:150px; height:40px; border:1px solid black;"><button id="btn_total" style="width:100%">BEREGN</button></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; width:100px; height:40px; border:1px solid black;">RESULT</td>
+                <td id="test_result" style="width:400px; height:40px; border:1px solid black;">true/false fra JSON POST til SKAT</td> 
+                <td style="width:150px; height:40px; border:1px solid black;"><button id="btn_result" style="width:100%">CHECK</button></td>
+            </tr>
+        </table>
+
     </body>
+    <script src="index.js"></script>
 </html>
