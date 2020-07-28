@@ -1,5 +1,7 @@
 package utils;
 
+import org.json.simple.JSONObject; 
+
 /**
  * The purpose of JSONBuilder: Building JSON files for REST service
  * @author Morten
@@ -8,5 +10,14 @@ package utils;
  */
 
 public class JSONBuilder {
+    
+    public String getResultOfScoreAsJSON(int[] totalScores){
+        
+        JSONObject json = new JSONObject();
+        
+        json.put("total", totalScores);
+        
+        return json.toJSONString();
+    }
 
 }
