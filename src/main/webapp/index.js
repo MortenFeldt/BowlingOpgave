@@ -27,7 +27,7 @@ function fetchGetEgen() {
     const scoresSkat = JSON.stringify(
             {scores: scores}
         );
-    const options = makeOptions("POST", scoresSkat);
+    const options = jsonFormatMethod("POST", scoresSkat);
  
     fetch(urlEgen, options)
         .then(res => res.json())
@@ -42,7 +42,7 @@ function fetchPostSkat() {
     const scoresSkat = JSON.stringify(
             {token: token, points:total}
         );
-    const options = makeOptions("POST", scoresSkat);
+    const options = jsonFormatMethod("POST", scoresSkat);
  
     fetch(urlSkat, options)
         .then(res => res.json())
@@ -52,14 +52,7 @@ function fetchPostSkat() {
         });
 }
 
-function test(){
-    console.log(token);
-    console.log(scores);
-    console.log(total);
-    console.log(result);
-}
-
-function makeOptions(method, body) {
+function jsonFormatMethod(method, body) {
     var opts = {
       method: method,
       headers: {
