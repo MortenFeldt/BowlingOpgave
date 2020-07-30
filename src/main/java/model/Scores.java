@@ -9,9 +9,6 @@ public class Scores {
     
     private int[][] scores;
 
-    public Scores() {
-    }
-
     public Scores(int[][] scores) {
         this.scores = scores;
     }
