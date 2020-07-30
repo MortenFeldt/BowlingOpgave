@@ -1,5 +1,6 @@
 const urlSkat = "http://13.74.31.101/api/points";
 const urlEgetREST = "http://localhost:8084/BowlingOpgaveTest/api/scores";
+const empty = "";
 
 var token = "";
 var scores = "";
@@ -19,6 +20,8 @@ function fetchGetSkat() {
                 document.getElementById("txt_scores").innerHTML = data.points;
                 token = data.token;
                 scores = data.points;
+                document.getElementById("txt_total").innerHTML = empty;
+                document.getElementById("txt_result").innerHTML = empty;
             });
 }
 
