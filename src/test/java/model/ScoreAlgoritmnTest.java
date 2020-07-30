@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- *
+ * Test file for different scoring cases
  * @author Morten Feldt
  */
 public class ScoreAlgoritmnTest {
@@ -110,7 +110,7 @@ public class ScoreAlgoritmnTest {
     @Test
     public void testPointsWithOnlyStrikeAll() {
        int[][] arr = {{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,10}};
-       int[] expected = {30,60,90,120,150,180,210,240,270,290,310};
+       int[] expected = {30,60,90,120,150,180,210,240,270,300};
        int[] actual = sa.scoreAlgoritmn(arr);
        Assert.assertArrayEquals(expected, actual);
     }
@@ -205,8 +205,8 @@ public class ScoreAlgoritmnTest {
     
     @Test
     public void testPointsWithOnlySpareAll() {
-       int[][] arr = {{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5}};
-       int[] expected = {15,30,45,60,75,90,105,120,135,145};
+       int[][] arr = {{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5},{5,5}};
+       int[] expected = {15,30,45,60,75,90,105,120,135,150};
        int[] actual = sa.scoreAlgoritmn(arr);
        Assert.assertArrayEquals(expected, actual);
     }

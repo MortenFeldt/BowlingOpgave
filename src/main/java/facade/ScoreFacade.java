@@ -3,10 +3,8 @@ package facade;
 import model.ScoreAlgoritmn;
 
 /**
- * The purpose of ScoreFacade: Class to methods used for connection to REST
+ * Facade class to methods used for REST
  * @author Morten Feldt
- * @version 1.0
- * @since 29-07-2020
  */
 
 public class ScoreFacade implements IScoreFacade{

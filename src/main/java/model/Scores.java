@@ -1,10 +1,8 @@
 package model;
 
 /**
- * The purpose of Scores: Hold and return scores in array
- * @author Morten
- * @version 1.0
- * @since 28-07-2020
+ * Class for bowling scores in array
+ * @author Morten Feldt
  */
 
 public class Scores {

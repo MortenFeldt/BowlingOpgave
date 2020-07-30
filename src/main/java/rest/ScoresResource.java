@@ -13,7 +13,6 @@ import model.Scores;
 
 /**
  * REST Web Service
- *
  * @author Morten Feldt
  */
 @Path("scores")
@@ -25,7 +24,7 @@ public class ScoresResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response postTotals(String content) {
-        Scores newScores = gson.fromJson(content, Scores.class);
-        return Response.ok().entity(gson.toJson(sf.getTotals(newScores.getScores()))).build();
+        Scores scores = gson.fromJson(content, Scores.class);
+        return Response.ok().entity(gson.toJson(sf.getTotals(scores.getScores()))).build();
     }
 }
