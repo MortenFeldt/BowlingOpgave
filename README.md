@@ -9,8 +9,11 @@ Projektet er udviklet i NetBeans IDE version 8.2
 4. http://localhost:8084/BowlingOpgaveTest/
 5. Følg fremgangsmåden på siden
 
-Kildekode: Source packages
-Testkode: Test packages
+### Kildekode
+Source packages
+
+### Testkode
+Test packages
 
 ### Test
 I forbindelse med test af algoritmen er der taget udgangspunkt i forskellige scenarier af bowling scores.
